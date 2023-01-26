@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+#home h1 {
+    font-weight: 900;
+}
+
+#home p {
+    color: white;
+}
+
+p {
+    color: gray;
+}
+
+#home {
+    background-image:  linear-gradient(rgba(13, 13, 65, 0.8), rgba(15, 4, 58, 0.8)), url(image/office.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.card-effect {
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all .4s;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transition: all .4s;
+}
+
+.iconContainer {
+    width: 60px;
+    height: 60px;
+    background-color: #0d6efd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex: none;
+}
+
+.iconContainer i {
+    color: white;
+}
+
+.service {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.service::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0d6efd;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    transition: all .5s ease;
+    z-index: -1;
+}
+
+.service:hover::after {
+    top: 0;
+    transition: all .5s ease;
+    opacity: 1;
+}
+
+.service:hover .iconContainer i {
+    color: #0d6efd;
+}
+
+.service:hover .iconContainer {
+    background-color: white;
+}
+
+.service:hover p, 
+.service:hover h5 {
+    color: white;
+}
+
+.girlImage {
+    background-image: url(image/girl.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 12, 51, 0.8);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: all .4s;
+}
+
+.projectImage {
+    transition: all .4s;
+}
+
+.imageContainer:hover .projectImage {
+    transform: scale(1.2);
+    transition: all .4s;
+}
+
+.check i {
+    font-size: 20px;
+    margin-right: 1px;
+}
+
+.check {
+    margin-bottom: 10px;
+}
+
+#pricing .card-effect {
+    margin-bottom: 50px;
+}
+
+
+#pricing .card-effect:hover {
+    transform: translateY(10px);
+}
+
+.faceImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.socialIconContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #0d6efd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 50%;
+    transition: all .4s;
+}
+
+.socialIcon i { 
+    color: #fff;
+    font-size: 22px;
+}
+
+.socialIcon:hover {
+    background-color: #fff;
+    border: 1px solid #0d6efd;
+}
+
+.socialIcon:hover i {
+    color: #0d6efd;
+    transition: all .4s;
+}
+
+#team .card-effect:hover {
+    transform: translateY(10px);
+}
+
+#blog .card-effect:hover {
+    transform: translateY(10px);
+}
+
+#contact input, #contact textarea {
+    outline: none;
+    border: none;
+    background-color: rgba(182, 176, 176, 0.25);
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+    transition: all .3s;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s;
+}
+
+footer h1 {
+    margin-top: -10px;
+}
+
+.bottom {
+    background-color: rgb(49, 48, 48);
+}
+
+
+
+.bottom .socialIcon:hover {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .bottom .socialIconContainer {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 576px) {
+    #pricing .card-effect {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
